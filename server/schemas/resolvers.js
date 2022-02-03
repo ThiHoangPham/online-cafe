@@ -15,7 +15,6 @@ const resolvers = {
             if (category) {
                 params.category = category;
             }
-
             if (name) {
                 params.name = {
                     $regex: name
@@ -34,10 +33,8 @@ const resolvers = {
                     path: 'orders.products',
                     populate: 'category'
                 });
-
                 return user.orders.id(_id);
             }
-
             throw new AuthenticationError('Not logged in');
         },
         // order without login
@@ -47,10 +44,8 @@ const resolvers = {
                     path: 'orders.products',
                     populate: 'category'
                 });
-
                 return user.orders.id(_id);
             }
-
             throw new AuthenticationError('Not logged in');
         },
         // stripe
@@ -58,7 +53,6 @@ const resolvers = {
             const url = new URL(context.headers.referer).origin;
             const order = new Order({ products: args.products });
             const line_items = [];
-
             const { products } = await order.populate('products').execPopulate();
 
             for (let i = 0; i < products.length; i++) {
@@ -67,13 +61,11 @@ const resolvers = {
                     description: products[i].description,
                     images: [`${url}/images/${products[i].image}`]
                 });
-
                 const price = await stripe.prices.create({
                     product: product.id,
                     unit_amount: products[i].price * 100,
                     currency: 'usd',
                 });
-
                 line_items.push({
                     price: price.id,
                     quantity: 1
@@ -86,7 +78,6 @@ const resolvers = {
                 success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
                 cancel_url: `${url}/`
             });
-
             return { session: session.id };
         },
         // get user for order history
@@ -141,7 +132,7 @@ const resolvers = {
             if (!correctPw) {
                 throw new AuthenticationError('Incorrect credentials');
             }
-            
+
             const token = signToken(user);
             return { token, user };
         }
