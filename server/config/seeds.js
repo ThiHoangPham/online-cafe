@@ -19,7 +19,7 @@ db.once('open', async () => {
         {
             name: 'Babyccino',
             description: 'Perfect for the little one, a warm milk drink, frothed up with steam.',
-            image: './assets/hotCoffee/babycino.png',
+            image: './assets/babycino.png',
             category: categories[0]._id,
             price: 3.50,
             quantity: 1
@@ -27,7 +27,7 @@ db.once('open', async () => {
         {
             name: 'Cappuccino',
             description: 'Espresso, full cream milk, a generous layer of froth and chocolate powder.',
-            image: './assets/hotCoffee/cappuccino.png',
+            image: './assets/cappuccino.png',
             category: categories[0]._id,
             price: 4.50,
             quantity: 1
@@ -35,56 +35,56 @@ db.once('open', async () => {
         {
             name: 'English Breakfast Tea',
             description: 'Kick start your day with an English Breakfast tea. Milk or no milk? The choice is yours.',
-            image: './assets/hotCoffee/english-breakfast-tea.png',
+            image: './assets/english-breakfast-tea.png',
             category: categories[0]._id,
             price: 4.00,
             quantity: 1
         }, {
             name: 'Espresso',
             description: 'A straight shot of coffee, perfect when you need a quick pick-me-up.',
-            image: './assets/hotCoffee/espresso.png',
+            image: './assets/espresso.png',
             category: categories[0]._id,
             price: 4.50,
             quantity: 1
         }, {
             name: 'Flat White',
             description: 'Like this single shot of espresso and steamed full cream milk.',
-            image: './assets/hotCoffee/flatwhite.png',
+            image: './assets/flatwhite.png',
             category: categories[0]._id,
             price: 4.50,
             quantity: 1
         }, {
             name: 'Hot Chocolate',
             description: 'Lovers of chocolate behold: steamed full cream milk made with chocolate powder.',
-            image: './assets/hotCoffee/hot-chocolate.png',
+            image: './assets/hot-chocolate.png',
             category: categories[0]._id,
             price: 4.00,
             quantity: 1
         }, {
             name: 'Latté',
             description: 'A classic mix of espresso, steamed full cream milk and a layer of on top.',
-            image: './assets/hotCoffee/latte.png',
+            image: './assets/latte.png',
             category: categories[0]._id,
             price: 4.50,
             quantity: 1
         }, {
             name: 'Long Black',
             description: 'If you really need to wake yourself up, try a espresso poured over boiling water.',
-            image: './assets/hotCoffee/longblack.png',
+            image: './assets/longblack.png',
             category: categories[0]._id,
             price: 4.00,
             quantity: 1
         }, {
             name: 'Macchiato',
             description: 'A shot of espresso mixed with a dash of milk so you still get a strong coffee taste.',
-            image: './assets/hotCoffee/macchiato.png',
+            image: './assets/macchiato.png',
             category: categories[0]._id,
             price: 4.50,
             quantity: 1
         }, {
             name: 'Mocha',
             description: 'A shot of espresso with steamed full cream milk and chocolate powder.',
-            image: './assets/hotCoffee/mocha.png',
+            image: './assets/mocha.png',
             category: categories[0]._id,
             price: 4.50,
             quantity: 1
@@ -92,7 +92,7 @@ db.once('open', async () => {
         {
             name: 'White Chocolate Iced Latté',
             description: 'Espresso combined with milk and sugar syrup poured over ice with whipped cream.',
-            image: './assets/coldCoffee/chocolate-iced-latte.png',
+            image: './assets/chocolate-iced-latte.png',
             category: categories[1]._id,
             price: 5.00,
             quantity: 1
@@ -100,35 +100,35 @@ db.once('open', async () => {
         {
             name: 'Coffee Frappé',
             description: 'A creamy Coffee Frappé, with irresistible whipped cream and indulgent drizzle.',
-            image: './assets/coldCoffee/coffee-frappe.png',
+            image: './assets/coffee-frappe.png',
             category: categories[1]._id,
             price: 5.00,
             quantity: 1
         }, {
             name: 'Iced Chocolate',
             description: 'A delicious blend of full cream milk and chocolate syrup, plus whipped cream.',
-            image: './assets/coldCoffee/iced-chocolate.png',
+            image: './assets/iced-chocolate.png',
             category: categories[1]._id,
             price: 5.00,
             quantity: 1
         }, {
             name: 'Iced Latté',
             description: 'A shot of smooth espresso combined with milk and sugar syrup poured over ice.',
-            image: './assets/coldCoffee/iced-latte.png',
+            image: './assets/iced-latte.png',
             category: categories[1]._id,
             price: 5.00,
             quantity: 1
         }, {
             name: 'Iced Long Black',
             description: 'A shot of our smooth espresso with chilled water and ice.',
-            image: './assets/coldCoffee/iced-long-black.png',
+            image: './assets/iced-long-black.png',
             category: categories[1]._id,
             price: 5.00,
             quantity: 1
         }, {
             name: 'Iced Mocha',
             description: 'A shot of espresso combined with milk and chocolate syrup poured over ice.',
-            image: './assets/coldCoffee/iced-mocha.png',
+            image: './assets/iced-mocha.png',
             category: categories[1]._id,
             price: 5.00,
             quantity: 1
@@ -136,7 +136,7 @@ db.once('open', async () => {
         {
             name: 'Mixed Berry Smoothie',
             description: 'Enjoy our refreshing, made from strawberry, raspberry, blueberry.',
-            image: './assets/drinks/berries-smoothie.png',
+            image: './assets/berries-smoothie.png',
             category: categories[2]._id,
             price: 5.50,
             quantity: 1
@@ -144,7 +144,7 @@ db.once('open', async () => {
         {
             name: 'Classic Coke',
             description: 'There is nothing like it with the famous, thirst-quenching taste.',
-            image: './assets/drinks/coke-classic.png',
+            image: './assets/coke-classic.png',
             category: categories[2]._id,
             price: 3.50,
             quantity: 1
@@ -152,7 +152,7 @@ db.once('open', async () => {
         {
             name: 'Fanta',
             description: 'Bright and bubbly, with that great orange taste.',
-            image: './assets/drinks/fanta.png',
+            image: './assets/fanta.png',
             category: categories[2]._id,
             price: 3.50,
             quantity: 1
@@ -160,7 +160,7 @@ db.once('open', async () => {
         {
             name: 'Sprite',
             description: 'It is refreshing, with a great lemon lime taste.',
-            image: './assets/drinks/sprite.png',
+            image: './assets/sprite.png',
             category: categories[2]._id,
             price: 3.50,
             quantity: 1
@@ -168,7 +168,7 @@ db.once('open', async () => {
         {
             name: 'Tropical Smoothie',
             description: 'Made with mango, pineapple and passionfruit plus no added sugar!',
-            image: './assets/drinks/tropical-smoothie.png',
+            image: './assets/tropical-smoothie.png',
             category: categories[2]._id,
             price: 5.50,
             quantity: 1
@@ -176,7 +176,7 @@ db.once('open', async () => {
         {
             name: 'Vanilla Thickshake',
             description: 'Made with creamy, fresh milk, ingredients in a sweet vanilla flavour.',
-            image: './assets/drinks/vanilla-shake.png',
+            image: './assets/vanilla-shake.png',
             category: categories[2]._id,
             price: 5.50,
             quantity: 1
@@ -184,7 +184,7 @@ db.once('open', async () => {
         {
             name: 'Banana Bread with butter',
             description: 'A thick slice of toasted Banana Bread makes for a special treat any time of day.',
-            image: './assets/toastie/banana-bread.png',
+            image: './assets/banana-bread.png',
             category: categories[3]._id,
             price: 4.00,
             quantity: 1
@@ -192,7 +192,7 @@ db.once('open', async () => {
         {
             name: 'Cheesy Toastie',
             description: 'For a simple pleasure come in for our always-tasty Cheese Toastie.',
-            image: './assets/toastie/cheese-toastie.png',
+            image: './assets/cheese-toastie.png',
             category: categories[3]._id,
             price: 4.50,
             quantity: 1
@@ -200,7 +200,7 @@ db.once('open', async () => {
         {
             name: 'Cheese & Tomato Toastie',
             description: 'For a quick bite, we’re doing perfectly toasted toasties, with melted cheese and fresh tomato.',
-            image: './assets/toastie/cheese-tomato.png',
+            image: './assets/cheese-tomato.png',
             category: categories[3]._id,
             price: 4.50,
             quantity: 1
@@ -208,7 +208,7 @@ db.once('open', async () => {
         {
             name: 'Ham & Cheese Toastie',
             description: 'Hot off the press, enjoy this classic - Just like mum makes it.',
-            image: './assets/toastie/ham-cheese.png',
+            image: './assets/ham-cheese.png',
             category: categories[3]._id,
             price: 4.50,
             quantity: 1
@@ -216,7 +216,7 @@ db.once('open', async () => {
         {
             name: 'Pineapple-Coconut Bread with Butter',
             description: 'Put a shine on your day with the sweet taste of the tropics.',
-            image: './assets/toastie/pineapple-coconut.png',
+            image: './assets/pineapple-coconut.png',
             category: categories[3]._id,
             price: 4.00,
             quantity: 1
@@ -224,7 +224,7 @@ db.once('open', async () => {
         {
             name: 'Raisin Toast with Butter',
             description: 'Succulent raisins and aromatic spices, make this the toast of the town.',
-            image: './assets/toastie/raisin.png',
+            image: './assets/raisin.png',
             category: categories[3]._id,
             price: 4.00,
             quantity: 1
@@ -232,7 +232,7 @@ db.once('open', async () => {
         {
             name: 'Blueberry Muffin',
             description: 'A baked blueberry muffin with blueberries mixed throughout.',
-            image: './assets/bakery/blueberry-muffin.png',
+            image: './assets/blueberry-muffin.png',
             category: categories[4]._id,
             price: 4.00,
             quantity: 1
@@ -240,7 +240,7 @@ db.once('open', async () => {
         {
             name: 'Chocolate Donut',
             description: 'A donut decorated with chocolate icing and chocolate brown sprinkles.',
-            image: './assets/bakery/choc-donut.png',
+            image: './assets/choc-donut.png',
             category: categories[4]._id,
             price: 4.00,
             quantity: 1
@@ -248,28 +248,28 @@ db.once('open', async () => {
         {
             name: 'Chocolate Raspberry Torte',
             description: 'A dense almond based, topped with raspberry crumble and chocolate.',
-            image: './assets/bakery/choc-rasp-cheesecake.png',
+            image: './assets/choc-rasp-cheesecake.png',
             category: categories[4]._id,
             price: 4.50,
             quantity: 1
         }, {
             name: 'Chocolate Macaron',
             description: 'No one does macarons like us. One taste and you will see why.',
-            image: './assets/bakery/chocolate-macaron.png',
+            image: './assets/chocolate-macaron.png',
             category: categories[4]._id,
             price: 4.00,
             quantity: 1
         }, {
             name: 'Mud Muffin',
             description: 'A baked choc muffin with choc chips and choc icing on top.',
-            image: './assets/bakery/mud-muffin.png',
+            image: './assets/mud-muffin.png',
             category: categories[4]._id,
             price: 4.00,
             quantity: 1
         }, {
             name: 'Salted Caramel Macaron',
             description: 'For a quick flavour burst try this salted caramel treat.',
-            image: './assets/bakery/salted-caramel-macaron.png',
+            image: './assets/salted-caramel-macaron.png',
             category: categories[4]._id,
             price: 4.00,
             quantity: 1
