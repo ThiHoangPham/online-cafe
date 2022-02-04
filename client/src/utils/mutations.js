@@ -1,4 +1,4 @@
-mport gql from 'graphql-tag';
+import gql from 'graphql-tag';
 
 export const LOGIN = gql`
     mutation login($email: String!, $password: String!) {
@@ -23,10 +23,10 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_ORDER = gql`
-    mutation addOrder($drinks: [ID]!) {
-        addOrder(drinks: $drinks) {
+    mutation addOrder($products: [ID]!) {
+        addOrder(products: $products) {
             purchaseDate
-            drinks {
+            products {
                 _id
                 name
                 description
