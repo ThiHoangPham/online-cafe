@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/react-hooks';
-import { LOGIN } from "../utils/mutations"
+import { LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -40,10 +40,10 @@ function LoginStrap(props) {
     };
 
     return (
-        <Container fluid="md">
+        <Container fluid="md mt-5" >
             <Row className="justify-content-md-center">
-                {/* <Col/> */}
-                <Col md="auto">
+                <Col />
+                <Col>
                     <Card style={{ width: '18rem' }}>
                         <Card.Body>
                             <Form onSubmit={handleFormSubmit} action='submit'>
@@ -66,10 +66,12 @@ function LoginStrap(props) {
                                 </Button>
                             </Form>
                         </Card.Body>
+
                     </Card>
                 </Col>
+                <Col />
             </Row>
-        </Container>
+        </Container >
     )
 }
 
