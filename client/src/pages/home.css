@@ -1,0 +1,28 @@
+.jumbotron{
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.jumbotron{
+    background-image: url("https://i.ibb.co/7N4XMZw/cover-online-cafe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 75vh;
+    width: 98vw;
+    margin-top: 41px;
+    margin-bottom: -18px;
+    background-position: center !important; 
+    box-shadow: 5px 5px 5px 0px lightslategrey;
+    
+}
+
+.jumbotron p{
+    color: linen !important;
+    font-size: 1.5rem;
+}
+
+.jumbotron h1{
+    padding: 50px !important;
+    color: linen !important;
+}
