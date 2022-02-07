@@ -14,7 +14,7 @@ function NavStrap(props) {
 
     if (Auth.loggedIn()) {
         return (
-            <Navbar bg="dark" variant='dark' expand="lg">
+            <Navbar sticky="top" bg="dark" variant='dark' expand="lg">
                 <Navbar.Brand as={Link} to="/">{'onlineCafé ☕'}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -29,7 +29,7 @@ function NavStrap(props) {
         )
     } else {
         return (
-            <Navbar bg="dark" variant='dark' expand="lg">
+            <Navbar sticky="top" bg="dark" variant='dark' expand="lg">
                 <Navbar.Brand as={Link} to="/">{'onlineCafé ☕'}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
