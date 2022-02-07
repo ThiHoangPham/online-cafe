@@ -2,36 +2,30 @@
 <br>(UWA Coding Bootcamp - Final Project) </h1>
 <p align="center">
   <a href="#">
-  <img alt="expressjs" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" target="_blank" />
+  <img alt="nodejs" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" target="_blank" />
   <a href="#">
-  <img alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascriptlogoColor=black" target="_blank" />
+  <img alt="apollo server" src="https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql" target="_blank" />
   <a href="#">
-  <img alt="graphql" src="https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white" target="_blank" />
+  <img alt="graphql" src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" target="_blank" />
   <a href="#">
   <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" target="_blank" />
   <a href="#">
+  <img alt="mongodb" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" target="_blank" />
+  <a href="#">
+  <img alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascriptlogoColor=black" target="_blank" />
+  <a href="#">
+  <img alt="css3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" target="_blank" />
+  <a href="#">
   <img alt="npm" src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" target="_blank" />
   <a href="#">
-  <img alt="npm" src="https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white" target="_blank" />
+  <img alt="heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white" target="_blank" />
   <a href="#">
-  <img alt="heroku" src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" target="_blank" />
-  <a href="#">
-  <img alt="sass" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" target="_blank" />
-  <a href="#">
-  <img alt="sweet alert2" src="https://img.shields.io/badge/Sweet_Alert2-9146FF?style=for-the-badge&logo=youtube-gaming&logoColor=white" target="_blank" />
-  <a href="#">
-  <img alt="mongodb" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" target="_blank" />
-  <a href="#">
-  <img alt="bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" target="_blank" />
-  <a href="#">
-  <img alt="node js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" target="_blank" />  
-  <a href="#">
-  <img alt="fontawesome" src="https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white" target="_blank" />
+  <img alt="html5" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
   <br>
   <a href="#">
   <img alt="watchers" src="https://img.shields.io/github/watchers/ThiHoangPham/online-cafe?color=%2346b946&style=flat-square" target="_blank" />
   <a href="#">
-  <img alt="rep size" src="https://img.shields.io/github/repo-size/ThiHoangPham/online-cafe-reviewer?style=flat-square" target="_blank" />
+  <img alt="rep size" src="https://img.shields.io/github/repo-size/ThiHoangPham/online-cafe?style=flat-square" target="_blank" />
   <a href="https://github.com/ThiHoangPham/online-cafe/blob/main/LICENSE">
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square" target="_blank" />
   </a>
@@ -57,7 +51,7 @@
       <a href="https://github.com/ThiHoangPham/online-cafe"><strong>Explore the docs »</strong></a>
       <br />
       <br />
-      <!-- <a href="https://rocky-cove-88046.herokuapp.com/" -->View Demo</a>
+      <a href="https://online-cafe.herokuapp.com/"View Demo</a>
       ·
       <a href="https://github.com/ThiHoangPham/online-cafe/issues">Report Bug</a>
       ·
@@ -137,7 +131,7 @@ THEN I find that the app uses Redux instead of the Context API
 ```
 
 # Live Heroku Deployment 
-<!-- <a href="https://rocky-cove-88046.herokuapp.com/"> -->
+<a href="https://online-cafe.herokuapp.com/">
   <img alt="live demo heroku" src="https://img.shields.io/badge/Demo-Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" target="_blank" />
   </a>
 
@@ -160,6 +154,7 @@ Run the following command at the root of your project and answer the prompted qu
 
 `--FROM LOCAL--`
 
+`npm run seed`
 `npm start`
 
 # Contributors
