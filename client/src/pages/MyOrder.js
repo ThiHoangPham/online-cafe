@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
-import {
-    ThemeProvider,
-    Stack, Flex, Box, Heading, Button
-} from '@chakra-ui/core';
-import theme from '../theme/theme';
+import { ThemeProvider, 
+    Stack, Flex, Box, Heading, Button } from '@chakra-ui/core';
+import theme  from '../theme/theme';
 import Auth from "../utils/auth";
 import CartItem from '../components/CartItem';
 import { useStoreContext } from "../utils/GlobalState.js";
@@ -25,7 +23,7 @@ const MyOrder = () => {
     useEffect(() => {
         async function getCart() {
             const cart = await idbPromise('cart', 'get');
-            dispatch({ type: ADD_MULTIPLE_TO_CART, products: [...cart] })
+            dispatch({ type: ADD_MULTIPLE_TO_CART, drinks: [...cart] })
         };
         if (!state.cart.length) {
             getCart();
@@ -34,65 +32,70 @@ const MyOrder = () => {
 
     useEffect(() => {
         if (data) {
-            stripePromise.then((res) => {
-                res.redirectToCheckout({ sessionId: data.checkout.session })
-            })
+          stripePromise.then((res) => {
+            res.redirectToCheckout({ sessionId: data.checkout.session })
+          })
         }
-    }, [data]);
-
+      }, [data]);
+    
     function calculateTotal() {
         let sum = 0;
         console.log(state.cart);
         state.cart.forEach(item => {
-            console.log(item);
-            if (item.customize.size === "Large (+$1.00)") {
-                sum += 1
-            }
-            sum += item.price;
+          console.log(item);
+          if (item.customize.size === "Large (+$1.00)" ) {
+            sum += 1
+          }
+          sum += item.price;
         });
         return sum.toFixed(2);
-    }
+      }
 
-    function submitCheckout() {
-        const productIds = [];
+      function submitCheckout() {
+        const drinkIds = [];
+    
         state.cart.forEach((item) => {
-            productIds.push(item._id);
+            drinkIds.push(item._id);
         });
+    
         getCheckout({
-            variables: { products: productIds }
+          variables: { drinks: drinkIds }
         });
-    }
+      }
 
-    return (
+      return (
         <ThemeProvider theme={theme}>
-            <Container fluid>
-                <Row>
-                    <Col sm="6">
-                        <Box pl={5}>
-                            <Heading as='h1'>Cart</Heading>
-                        </Box>
-                        <Flex justify="center">
-                            <Stack>
-                                {state.cart.map(item => (
-                                    <CartItem key={item._id} item={item} />
-                                ))}
-                            </Stack>
-                            <Box pl={3}>
-                                <Heading as='h1'>Total</Heading>
-                                <Heading as='h2'>${calculateTotal()}</Heading>
-                                {Auth.loggedIn() ?
-                                    <Button width="full" type="submit" size="xl" py="4" px="4" borderRadius="8px" onClick={submitCheckout}>Checkout
-                                    </Button>
-                                    :
-                                    <span>Log in to check out!</span>
-                                }
-                            </Box>
-                        </Flex>
-                    </Col>
-                </Row>
+          <Container fluid>
+          <Row>
+            <Col sm="6">
+            <Box pl={5}>
+                <Heading as='h1'>Cart</Heading>
+            </Box>
+            <Flex justify="center">
+                
+                    <Stack>
+                    {state.cart.map(item => (
+                        <CartItem key={item._id} item={item} />
+                    ))}
+                    </Stack>
+                
+                    <Box pl={3}>
+                        <Heading as='h1'>Total</Heading>
+                        <Heading as='h2'>${calculateTotal()}</Heading>
+                        { Auth.loggedIn() ? 
+                        <Button width="full" type="submit" size="xl" py="4" px="4" borderRadius="8px" onClick={submitCheckout}>Checkout
+                        </Button> 
+                        :       
+                        <span>Log in to check out!</span>
+                        }
+                    </Box>
+            </Flex>
+            </Col>
+            </Row>
             </Container>
-        </ThemeProvider>
-    );
+            </ThemeProvider>
+        );
 };
+
 
 export default MyOrder;

@@ -18,3 +18,4 @@ const FooterStrap = () => {
 }
 
 export default FooterStrap;
+

@@ -5,7 +5,7 @@
 
 a{
     color: black !important;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -14,7 +14,7 @@ a:hover{
 }
 
 .navbar-brand{
-    font-size: 2.5rem !important;
+    font-size: 2.2rem !important;
     font-weight: 700 !important;
 }
 

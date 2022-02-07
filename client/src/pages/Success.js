@@ -11,31 +11,35 @@ function Success() {
     useEffect(() => {
         async function saveOrder() {
             const cart = await idbPromise('cart', 'get');
-            const products = cart.map(item => item._id);
+            const drinks = cart.map(item => item._id);
 
-            if (products.length) {
-                const { data } = await addOrder({ variables: { products } });
-                const productData = data.addOrder.products;
+            if (drinks.length) {
+                const { data } = await addOrder({ variables: { drinks } });
+                const drinkData = data.addOrder.drinks;
 
-                productData.forEach((item) => {
+                drinkData.forEach((item) => {
                     idbPromise('cart', 'delete', item);
                 });
             }
+
             setTimeout(() => {
                 window.location.assign('/');
             }, 3000);
         }
+
         saveOrder();
     }, [addOrder]);
     return (
+
         <ThemeProvider theme={theme}>
-            <Flex width="full" textAlign="center" justifyContent="center" minHeight='100vh'>
-                <Box p={3}>
-                    <Heading as='h1'>Your order has been submitted!</Heading>
-                    <Heading as='h2'>Thank you</Heading>
-                </Box>
+             <Flex width="full" textAlign="center" justifyContent="center" minHeight='100vh'>
+            <Box p={3}>
+                <Heading as='h1'>Your order has been submitted!</Heading>
+                <Heading as='h2'>Thank you</Heading>
+            </Box>
             </Flex>
         </ThemeProvider>
+       
     );
 };
 

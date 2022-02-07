@@ -10,7 +10,9 @@ import './index.css';
 
 function CategoryMenu() {
     const [state, dispatch] = useStoreContext();
+
     const { categories } = state;
+
     const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
     useEffect(() => {
@@ -43,6 +45,7 @@ function CategoryMenu() {
         <Box>
             <h5>Categories.</h5>
             {categories.map(item => (
+
                 <Button type="button"
                     borderRadius="8px"
                     py="3"
