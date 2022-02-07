@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, CardTitle, CardText, CardBody, CardImg } from 'reactstrap';
 
 const CartItem = ({ item }) => {
-    const [dispatch] = useStoreContext();
+    const [state, dispatch] = useStoreContext();
     const removeFromCart = () => {
         dispatch({
             type: REMOVE_FROM_CART,

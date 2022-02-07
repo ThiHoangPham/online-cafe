@@ -23,7 +23,6 @@ function DrinkCard({ item }) {
     }
 
     const addToCart = () => {
-        const itemInCart = cart.find((cartItem) => cartItem._id === _id);
             item.customize = customize;
             console.log("_______")
             console.log(item);

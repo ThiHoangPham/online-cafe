@@ -6,7 +6,6 @@ import theme  from '../theme/theme';
 
 import CategoryMenu from "../components/CategoryMenu";
 import DrinkList from "../components/DrinkList";
-//import DrinkCard from '../components/DrinkCard';
 import { QUERY_ALL_DRINKS } from '../utils/queries';
 import { useStoreContext } from "../utils/GlobalState";
 import { UPDATE_DRINKS } from "../utils/actions";
@@ -35,7 +34,6 @@ console.log("state", state);
             })
         }
     }, [loading, data, dispatch]);
-    // console.log(state.drinks);
 
     return (
         <ThemeProvider theme={theme}>
@@ -45,12 +43,6 @@ console.log("state", state);
                     <CategoryMenu />
                 </Box>
                 <DrinkList drinks={state.drinks}/>
-                    {/*<Grid templateColumns={["repeat(1, 1fr)","repeat(1, 1fr)","repeat(3, 1fr)","repeat(3, 1fr)"]} gap={6}>
-                        {state.drinks.map(item => (
-                            <DrinkCard item={item} key={item._id}/>
-                        ))}
-                       
-                    </Grid> */}
                 </Box>
             </Flex>
             
