@@ -25,7 +25,7 @@ const MyOrder = () => {
     useEffect(() => {
         async function getCart() {
             const cart = await idbPromise('cart', 'get');
-            dispatch({ type: ADD_MULTIPLE_TO_CART, drinks: [...cart] })
+            dispatch({ type: ADD_MULTIPLE_TO_CART, products: [...cart] })
         };
         if (!state.cart.length) {
             getCart();
@@ -54,12 +54,12 @@ const MyOrder = () => {
     }
 
     function submitCheckout() {
-        const drinkIds = [];
+        const productIds = [];
         state.cart.forEach((item) => {
-            drinkIds.push(item._id);
+            productIds.push(item._id);
         });
         getCheckout({
-            variables: { drinks: drinkIds }
+            variables: { products: productIds }
         });
     }
 
