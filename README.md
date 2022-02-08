@@ -6,15 +6,21 @@
   <a href="#">
   <img alt="apollo server" src="https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql" target="_blank" />
   <a href="#">
+  <img alt="stripe" src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white" target="_blank" />
+  <a href="#">
   <img alt="graphql" src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" target="_blank" />
   <a href="#">
   <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" target="_blank" />
   <a href="#">
   <img alt="mongodb" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" target="_blank" />
   <a href="#">
+  <img alt="chakra ui" src="https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white" target="_blank" />
+  <a href="#">
   <img alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascriptlogoColor=black" target="_blank" />
   <a href="#">
   <img alt="css3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" target="_blank" />
+  <a href="#">
+  <img alt="bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" target="_blank" />
   <a href="#">
   <img alt="npm" src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" target="_blank" />
   <a href="#">
@@ -51,7 +57,7 @@
       <a href="https://github.com/ThiHoangPham/online-cafe"><strong>Explore the docs »</strong></a>
       <br />
       <br />
-      <a href="https://online-cafe.herokuapp.com/"View Demo</a>
+      <a href="https://online-cafe.herokuapp.com/">View Demo</a>
       ·
       <a href="https://github.com/ThiHoangPham/online-cafe/issues">Report Bug</a>
       ·
@@ -106,7 +112,8 @@ Your project must fulfill the following requirements:
 * Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 # About "Online Café" Project
-You own a bustling café, and you don't want your customers to waste their time waiting for their order up. Or you want to open your cafe business but can't afford to rent a shop. This Web App is the solution for all of you! With this App, your customers can drop their drink orders, take notes, make a payment, and everything is online with a few clicks. "Save More Time - Give Good Services - Earn More Money!".
+You own a bustling café, and you don't want your customers to waste their time waiting for their order up. Or you want to open your cafe business but can't afford to rent a shop. This Web App is the solution for all of you! With this App, your customers can drop their drink orders, take notes, make a payment, and everything is online with a few clicks. 
+<br>"Save More Time - Give Good Services - Earn More Money!".
 
 # User Story
 ```
@@ -117,17 +124,32 @@ SO THAT my customers can pick any of them, take note if needed, and make payment
 
 # Acceptance Criteria
 ```
-GIVEN an e-commerce café web app
-WHEN I review the app’s store
-THEN I find that the app uses a Redux store instead of the Context API
-WHEN I review the way the React front end accesses the store
-THEN I find that the app uses a Redux provider
-WHEN I review the way the app determines changes to its global state
-THEN I find that the app passes reducers to a Redux store instead of using the Context API
-WHEN I review the way the app extracts state data from the store
-THEN I find that the app uses Redux instead of the Context API
-WHEN I review the way the app dispatches actions
-THEN I find that the app uses Redux instead of the Context API 
+GIVEN an Online Cafe Store
+WHEN I load App
+THEN I am presented with a menu, navBar, and Login/Signup, and a photo with a description of the store
+WHEN I click on an order button takes me to the main menu
+THEN I am presented with all drinks lists and an add cart button, and a customized button
+WHEN I am not logged in and enter the site
+THEN I still can see all the store menu, choose the foods/drink I want
+WHEN I click on the Login/Signup menu option
+THEN a modal appears on the screen with a toggle between the option to log in or sign up
+WHEN the toggle is set to Signup
+THEN I am presented with three inputs for a username, an email address, a password, and a signup button
+WHEN the toggle is set to log in
+THEN I am presented with two inputs for an email address and a password and login button
+WHEN I enter a valid email address and create a password and click on the signup button
+THEN my user account is created, and I am logged in to the site
+WHEN I enter my account’s email address and password and click on the login button
+THEN I, the modal closes, and I am logged in to the site
+WHEN I am logged in to the site
+THEN I can use all the functions, an option to see my cart remove any item, and it can take me to the check out page if need
+THEN that book’s information is saved to my account
+WHEN I click on the option to see my cart
+THEN I am presented with the drinks/foods I have chosen to my cart, each featuring their customization 
+WHEN I click on the Remove button on an item
+THEN that item is deleted from my cart list
+WHEN I click on the Logout button
+THEN I am logged out of the site and presented with the home page  
 ```
 
 # Live Heroku Deployment 
@@ -139,13 +161,13 @@ THEN I find that the app uses Redux instead of the Context API
 
 The following image shows the web application's appearance and functionality:
     
-![online-coffee-shop-gif]()
+![online-coffee-shop-gif](./client/public/images/online-cafe.gif)
 
 # Installation
 
 `fork the repo`
 
-`it clone to local`
+`git clone to local`
 
 `npm install`
 
@@ -155,11 +177,12 @@ Run the following command at the root of your project and answer the prompted qu
 `--FROM LOCAL--`
 
 `npm run seed`
+
 `npm start`
 
 # Contributors
-<a href="https://github.com/ThiHoangPham/online-coffee-shop">
-  <img alt="contributor" src="https://contrib.rocks/image?repo=ThiHoangPham/online-coffee-shop" target="_blank" />
+<a href="https://github.com/ThiHoangPham/online-cafe">
+  <img alt="contributor" src="https://contrib.rocks/image?repo=ThiHoangPham/online-cafe" target="_blank" />
   </a>
 
 # Contribution
@@ -177,8 +200,10 @@ This how you can contribute to this project:
 # More About Me
   <a href="https://github.com/ThiHoangPham">
   <img alt="profile-github" src="https://img.shields.io/badge/Profile-GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank" />
-  <a href="https://thihoangpham.github.io/updated-professional-materials/">
-  <img alt="portfolio-page" src="https://img.shields.io/badge/Portfolio-Page-FEAA2D?style=for-the-badge&logo=deezer&logoColor=white" target="_blank" />
+  <a href="https://thihoangpham.github.io/react-portfolio/">
+  <img alt="portfolio-page-latest" src="https://img.shields.io/badge/Portfolio-Page-FEAA2D?style=for-the-badge&logo=deezer&logoColor=white" target="_blank" />
+  <a href="https://www.linkedin.com/in/thaihoangpham/">
+  <img alt="portfolio-page-latest" src="https://img.shields.io/badge/Profile-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
   <a href="mailto:thaihoangpham2008@gmail.com">
   <img alt="email-adam" src="https://img.shields.io/badge/Email to me-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" />
   </br>
