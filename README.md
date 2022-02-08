@@ -2,6 +2,8 @@
 <br>(UWA Coding Bootcamp - Final Project) </h1>
 <p align="center">
   <a href="#">
+  <img alt="express js" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" target="_blank" />
+  <a href="#">
   <img alt="nodejs" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" target="_blank" />
   <a href="#">
   <img alt="apollo server" src="https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql" target="_blank" />
