@@ -1,4 +1,4 @@
-<h1 align="center"> Online Café ☕
+<h1 align="center"> OnlineCafé ☕
 <br>(UWA Coding Bootcamp - Final Project) </h1>
 <p align="center">
   <a href="#">
